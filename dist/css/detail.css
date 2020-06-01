@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url("public.css");
+body {
+  height: 1000px; }
+
+/* <!-- 京东头部 --> */
+.oinput {
+  width: 100%;
+  height: 31px;
+  background-color: #e3e4e5; }
+
+/* back */
+.back {
+  width: 100%;
+  height: 110px;
+  background-color: #95c2e9;
+  /* 渐变颜色 */ }
+
+/* nav部分 */
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #005ba2; }
+
+/* clearfix */
+.clearfix {
+  width: 100%;
+  height: 44px;
+  background-color: #f2f2f2; }
+
+/* section */
+section {
+  width: 100%;
+  height: 500px;
+  background-color: #ffffff; }
+  section .section {
+    margin-left: 69px;
+    margin-right: 62px;
+    height: 500px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between; }
+    section .section .section-one {
+      width: 352px;
+      border: 1px solid black;
+      position: relative; }
+      section .section .section-one .secbox {
+        width: 350px;
+        height: 350px;
+        border: 1px solid black;
+        position: relative; }
+        section .section .section-one .secbox img {
+          width: 350px;
+          height: 350px; }
+        section .section .section-one .secbox #mark {
+          position: absolute;
+          width: 175px;
+          height: 175px;
+          left: 0px;
+          top: 0px;
+          display: none;
+          background: rgba(245, 187, 3, 0.5);
+          z-index: 10001 !important; }
+      section .section .section-one ul {
+        position: relative;
+        padding-left: 32px;
+        padding-right: 32px;
+        overflow: hidden;
+        display: flex; }
+        section .section .section-one ul .span-1 {
+          font-size: 32px;
+          font-weight: 800;
+          color: #dfdfdf;
+          position: absolute;
+          left: 0px;
+          top: 50%px;
+          margin-right: -30px; }
+        section .section .section-one ul .span-2 {
+          font-size: 32px;
+          color: #dfdfdf;
+          position: absolute;
+          right: 0px;
+          top: 0px; }
+        section .section .section-one ul li img {
+          width: 50px;
+          height: 50px; }
+        section .section .section-one ul li.ac {
+          border: 2px solid red; }
+      section .section .section-one #big {
+        width: 539px;
+        height: 541px;
+        position: absolute;
+        left: 352px;
+        top: 0px;
+        border: 1px solid #e4e4e4;
+        overflow: hidden;
+        display: none; }
+        section .section .section-one #big img {
+          width: 700px;
+          height: 700px; }
+    section .section .section-two {
+      width: 590px;
+      background-color: #f3f3f3;
+      border: 1px solid black; }
+    section .section .section-three {
+      width: 210px;
+      /* height: ; */
+      background-color: #ffffff;
+      border: 1px solid black; }

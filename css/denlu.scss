@@ -1,0 +1,51 @@
+@import url("public.css");
+header{
+	width: 100%;
+	height:100px;
+}
+.header{
+	height:100px;
+	width: 1210px;
+	background:pink;
+	margin:0 auto
+	
+}
+.headerone{
+	float:left;
+	margin-top:25px;
+}
+.headerone a img{
+	height: 50px;
+	vertical-align:middle
+}
+.headerone span{
+	vertical-align:middle;
+	font-size:24px;
+	margin-left:18px;
+}
+
+.headertwo{
+	float:right;
+	margin-top:58px;
+}
+.headertwo span{
+	color:#999999
+}
+.headertwo a{
+	color:#ee2222
+}
+
+
+
+/* section */
+section{
+	width: 100%;
+	height:554px;
+	background-color:red;
+}
+section .section{
+	width: 401px;
+	height:554px;
+	background:yellow;
+	margin:0 auto
+}
