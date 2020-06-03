@@ -2,7 +2,7 @@
 define(["jquery"],function($){
 	function shoplist() {
 		var  shop = $('.shop-daohan-div')
-		$.get("../data/shop.json", function(body, statusText, xhr){
+		$.get("data/shop.json", function(body, statusText, xhr){
 			if(statusText == "success"){
 				if(xhr.status == "200"){
 					console.log(body)

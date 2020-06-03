@@ -23,5 +23,6 @@ require.config({
 //前后模块，和后面的参数，顺序一定要一一对应。
 require(["details"], function(details,$){
     //add 是前面引入模块返回的对象
-	details.details()
+	details.details();
+	details.move()
 })

@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<!-- <base href="/"> -->
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 	</head>
 	<body>
 		<div id = "daojishi">
+			<span class="x glyphicon" id="glyphicon"></span>
 			<a href="#"><img src="http://img30.360buyimg.com/babel/jfs/t1/92697/1/15551/57363/5e70af7fE11f8a035/41c4b49bf2cb81bd.jpg!q70.jpg.webp" alt=""></a>
 		</div>
 		<header>
@@ -17,10 +20,10 @@
 				</a>
 				
 				<nav>
-					<span>
-						<a href="">你好，请登录</a>
-						<a id="register"  href="javascript:;">免费注册</a>
-					</span>
+						<a class="bloc" href="./login.html">你好，请登录</a>
+						<a class="bloc" id="register"  href="register.html">免费注册</a>
+						<a class="none" id="none">您好，<span></span></a>
+						<a class="none" id="tuichu">退出登陆</a>
 					<a href="">我的订单</a>
 					<a href="" class="my"  id = "myclass">我的京东<img src="images/2.png">
 						<div class = "wodejingdong" id = "wode"></div>

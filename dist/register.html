@@ -2,15 +2,23 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>注册页</title>
-		<link rel="stylesheet" href="../css/register.css">
-		<link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.min.css"/>
+		<title>注册</title>
+		<link rel="stylesheet" href="css/register.css">
 	</head>
 	<body>
+		<!--  -->
+		<div id="jingdongxie">
+			<div id="jingdongxieyi">
+				<p>京东用户注册协议和隐私政策</p>
+				<div class="jingdongxieyi_1">正文</div>
+				<div class="jingdongxieyi_2">同意并继续</div>
+			</div>
+		</div>
+		
 		<header>
 			<div class="header">
 				<div class="header-left">
-					<a href=""><img src="../img/9.png" alt=""></a><span>欢迎注册</span>
+					<a href=""><img src="images/9.png" alt=""></a><span>欢迎注册</span>
 				</div>
 				<div class="header-right">
 					<span>已有账号？</span><a href="">请登录&lt;</a>
@@ -21,8 +29,8 @@
 			<div class="section">
 				<div class="section-head">
 					<div class="one">
-						<span class="one-number">1</span>
-						<span>验证手机号</span>
+						<span class="one-number number">1</span>
+						<span class="ber">验证手机号</span>
 					</div>
 					<div class="two">--------></div>
 					<div class="one">
@@ -39,10 +47,17 @@
 					<form action="../api/user.register.php" method="post">
 						<div class="one">
 							<div id="">中国0086</div>
-							<div id=""><input type="text" placeholder="建议使用常用手机号"></div>
+							<div id="oInput"><input type="text" placeholder="建议使用常用手机号" required="required"></div>
 						</div>
-						<div class="two">点击按钮进行验证</div>
-						<div class="three">下一步</div>
+						<div class="one">
+							<div id="">密码区</div>
+							<div id="opwd"><input type="password" placeholder="请输入密码" required="required"></div>
+						</div>
+						
+						
+						<div class="two" id="two">点击按钮进行验证</div>
+						<!-- <div class="three">下一步</div> -->
+						<div class="three" id="three">点击注册</div>
 						<div class="four">
 							<div class="four-qiye">
 								<a id="yonghu" href=""><span class="glyphicon glyphicon-globe"></span>企业用户注册</a>

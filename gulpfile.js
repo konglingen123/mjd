@@ -27,6 +27,11 @@ gulp.task("scripts", function(){
     .pipe(gulp.dest("dist/js"))
     .pipe(connect.reload());
 })
+gulp.task("api",function(){
+	return gulp.src("api/*.php")
+	.pipe(gulp.dest("dist/api"))
+	.pipe(connect.reload());
+})
 const scss = require("gulp-sass")
 const minifyCSS = require("gulp-minify-css");
 const rename = require("gulp-rename");
@@ -41,11 +46,11 @@ gulp.task("scss1",function(){
 	.pipe(connect.reload());
 })
 gulp.task("scss2", function(){
-    return gulp.src("css/denlu.scss")
+    return gulp.src("css/login.scss")
     .pipe(scss())
     .pipe(gulp.dest("dist/css"))
     .pipe(minifyCSS())
-    .pipe(rename("css.min.css"))
+    .pipe(rename("login.min.css"))
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
@@ -54,7 +59,7 @@ gulp.task("scss3", function(){
     .pipe(scss())
     .pipe(gulp.dest("./dist/css"))
     .pipe(minifyCSS())
-    .pipe(rename("css.min.css"))
+    .pipe(rename("public.min.css"))
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
@@ -63,7 +68,7 @@ gulp.task("scss4", function(){
     .pipe(scss())
     .pipe(gulp.dest("dist/css"))
     .pipe(minifyCSS())
-    .pipe(rename("css.min.css"))
+    .pipe(rename("register.min.css"))
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
@@ -72,13 +77,21 @@ gulp.task("scss5", function(){
     .pipe(scss())
     .pipe(gulp.dest("dist/css"))
     .pipe(minifyCSS())
-    .pipe(rename("css.min.css"))
+    .pipe(rename("detail.min.css"))
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
-
+gulp.task("iconfont", function(){
+    return gulp.src("css/iconfont.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("iconfont.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
 //将上面所有的任务执行一遍，在监听之前，将所有的任务，先去执行一遍
-gulp.task("build", ["copy-html", 'images', "scripts", "data", "scss1", "scss2", "scss3", "scss4","scss5"], function(){
+gulp.task("build", ["api","copy-html",'images', "scripts", "data", "scss1", "scss2", "scss3", "scss4","scss5","iconfont"], function(){
     console.log("项目建立成功");
 })
 
@@ -89,10 +102,12 @@ gulp.task("watch", function(){
     gulp.watch(["json/.json", "!package.json"], ['data']);
     gulp.watch(["js/*.js", "!gulpfile.js"], ['scripts']);
     gulp.watch("css/index.scss", ['scss1']);
-    gulp.watch("css/denlu.scss", ['scss2']);
+    gulp.watch("css/login.scss", ['scss2']);
 	gulp.watch("css/public.scss", ['scss3']);
 	gulp.watch("css/register.scss", ['scss4']);
 	gulp.watch("css/detail.scss", ['scss5']);
+	gulp.watch("css/iconfont.css", ['iconfont']);
+	gulp.watch("api/*.php", ['api']);
 })
 
 const connect = require("gulp-connect");
