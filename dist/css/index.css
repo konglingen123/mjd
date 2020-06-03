@@ -499,7 +499,6 @@ li.hover {
         display: flex;
         text-align: center;
         height: 60px;
-        background-color: greenyellow;
         background: url(../images/11.png) no-repeat 179px 10px, url(../images/11.png) no-repeat 360px 10px, url(../images/11.png) no-repeat 541px 10px, url(../images/11.png) no-repeat 721px 10px, url(../images/11.png) no-repeat 900px 10px; }
         .recommended .recommended-fy .shop-daohan ul li {
           flex: 1;
@@ -525,69 +524,66 @@ li.hover {
           color: #ffffff; }
         .recommended .recommended-fy .shop-daohan ul li.lip p:last-child {
           color: #e1251b; }
-      .recommended .recommended-fy .shop-daohan .shopdaohan {
-        background-color: #f7f7f7; }
-        .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div {
-          width: 1192px;
-          height: 1000px;
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          align-content: flex-start; }
-          .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a {
-            background-color: white;
-            margin-top: 10px;
-            width: 229px;
-            height: 322px;
+      .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div {
+        width: 1192px;
+        height: 1000px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: flex-start; }
+        .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a {
+          margin-top: 10px;
+          width: 229px;
+          height: 322px;
+          text-align: center;
+          padding-top: 30px; }
+          .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a img {
+            width: 153px;
+            height: 153px; }
+          .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .ipone {
+            width: 185px;
+            display: inline-block;
             text-align: center;
-            padding-top: 30px; }
-            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a img {
-              width: 153px;
-              height: 153px; }
-            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .ipone {
-              width: 185px;
-              display: inline-block;
-              text-align: center;
-              height: 50px;
-              margin-top: 40px;
-              margin-bottom: 10px;
-              overflow: hidden;
-              text-overflow: ellipsis; }
-              .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .ipone i {
-                font-style: normal;
-                width: 16px;
-                height: 9px;
-                color: #ffffff;
-                font-size: 12px;
-                background-color: #e1251b; }
-              .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .ipone span {
-                font-size: 12px;
-                color: #666666;
-                line-height: 25px;
-                color: #666666; }
-            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i {
-              color: #e1251b;
-              font-style: normal; }
-              .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i:first-child {
-                font-size: 10px;
-                font-weight: 800;
-                float: left;
-                margin-top: 5px; }
-              .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i:nth-child(2) {
-                font-size: 16px;
-                font-weight: 800;
-                float: left; }
-              .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i:last-child {
-                font-size: 10px;
-                float: left;
-                margin-top: 5px; }
-            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:last-child {
-              float: right;
-              width: 25px;
-              height: 15px;
-              color: #e1251b;
+            height: 50px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .ipone i {
+              font-style: normal;
+              width: 16px;
+              height: 9px;
+              color: #ffffff;
               font-size: 12px;
-              line-height: 15px;
-              margin-right: 21px;
-              border: 1px solid #e1251b;
-              border-radius: 2px; }
+              background-color: #e1251b; }
+            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .ipone span {
+              font-size: 12px;
+              color: #666666;
+              line-height: 25px;
+              color: #666666; }
+          .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i {
+            color: #e1251b;
+            font-style: normal; }
+            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i:first-child {
+              font-size: 10px;
+              font-weight: 800;
+              float: left;
+              margin-top: 5px; }
+            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i:nth-child(2) {
+              font-size: 16px;
+              font-weight: 800;
+              float: left; }
+            .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:first-child i:last-child {
+              font-size: 10px;
+              float: left;
+              margin-top: 5px; }
+          .recommended .recommended-fy .shop-daohan .shopdaohan .shop-daohan-div a .iptwo span:last-child {
+            float: right;
+            width: 25px;
+            height: 15px;
+            color: #e1251b;
+            font-size: 12px;
+            line-height: 15px;
+            margin-right: 21px;
+            border: 1px solid #e1251b;
+            border-radius: 2px; }

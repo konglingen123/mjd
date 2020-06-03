@@ -81,6 +81,33 @@ gulp.task("scss5", function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
+gulp.task("scss6", function(){
+    return gulp.src("css/header.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("header.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss7", function(){
+    return gulp.src("css/footer.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("footer.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+gulp.task("scss8", function(){
+    return gulp.src("css/list.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("list.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
 gulp.task("iconfont", function(){
     return gulp.src("css/iconfont.scss")
     .pipe(scss())
@@ -91,7 +118,7 @@ gulp.task("iconfont", function(){
     .pipe(connect.reload());
 })
 //将上面所有的任务执行一遍，在监听之前，将所有的任务，先去执行一遍
-gulp.task("build", ["api","copy-html",'images', "scripts", "data", "scss1", "scss2", "scss3", "scss4","scss5","iconfont"], function(){
+gulp.task("build", ["api","copy-html",'images', "scripts", "data", "scss1", "scss2", "scss3", "scss4","scss5","scss6","scss7","scss8","iconfont"], function(){
     console.log("项目建立成功");
 })
 
@@ -106,6 +133,9 @@ gulp.task("watch", function(){
 	gulp.watch("css/public.scss", ['scss3']);
 	gulp.watch("css/register.scss", ['scss4']);
 	gulp.watch("css/detail.scss", ['scss5']);
+	gulp.watch("css/header.scss", ['scss6']);
+	gulp.watch("css/footer.scss", ['scss7']);
+	gulp.watch("css/list.scss", ['scss8']);
 	gulp.watch("css/iconfont.css", ['iconfont']);
 	gulp.watch("api/*.php", ['api']);
 })

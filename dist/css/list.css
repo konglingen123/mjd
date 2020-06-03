@@ -1,0 +1,224 @@
+@import url("public.css");
+header {
+  width: 100%;
+  height: 30px;
+  background-color: #e3e4e5; }
+
+.sousuo {
+  width: 100%;
+  height: 87px;
+  background-color: skyblue; }
+
+aside {
+  width: 100%;
+  height: 478px;
+  background-color: #ffffff; }
+  aside ul {
+    width: 1200px;
+    height: 478px;
+    background-color: #f0f0f7;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    aside ul li:nth-child(1) {
+      width: 200px;
+      height: 100%;
+      background-color: red;
+      position: relative; }
+      aside ul li:nth-child(1) .ap {
+        width: 100%;
+        height: 40px;
+        background-color: #ccb633;
+        color: white;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center; }
+      aside ul li:nth-child(1) .aside .asidediv {
+        width: 200px;
+        height: 132px;
+        background-color: #a19e99;
+        padding-top: 34px; }
+        aside ul li:nth-child(1) .aside .asidediv p {
+          height: 14px;
+          font-size: 14px;
+          display: inline-block;
+          line-height: 14px; }
+          aside ul li:nth-child(1) .aside .asidediv p a {
+            margin-left: 20px;
+            color: #f8f6f6;
+            font-weight: 800; }
+            aside ul li:nth-child(1) .aside .asidediv p a:hover {
+              color: #ccb633; }
+        aside ul li:nth-child(1) .aside .asidediv .asidediv1 {
+          padding-left: 20px; }
+          aside ul li:nth-child(1) .aside .asidediv .asidediv1 a {
+            font-size: 12px;
+            color: #f8f6f6;
+            padding-right: 5px;
+            border-right: 1px solid #9a9998; }
+            aside ul li:nth-child(1) .aside .asidediv .asidediv1 a:hover {
+              color: #ccb633; }
+        aside ul li:nth-child(1) .aside .asidediv:hover {
+          background-color: #756b6b; }
+      aside ul li:nth-child(1) .borde {
+        width: 179px;
+        height: 0px;
+        border: 1px dotted #ddd; }
+      aside ul li:nth-child(1) .borde_one {
+        position: absolute;
+        left: 10px;
+        top: 186px; }
+      aside ul li:nth-child(1) .borde_two {
+        position: absolute;
+        left: 10px;
+        top: 332px; }
+    aside ul li:nth-child(2) {
+      width: 740px;
+      height: 100%; }
+      aside ul li:nth-child(2) p {
+        width: 100%;
+        height: 39px;
+        line-height: 39px;
+        position: relative;
+        background-color: white; }
+        aside ul li:nth-child(2) p a {
+          font-size: 14px;
+          color: #000000;
+          padding-left: 27px;
+          padding-right: 27px; }
+        aside ul li:nth-child(2) p span {
+          display: inline-block;
+          width: 2px;
+          height: 14px;
+          background-color: #222222;
+          position: absolute;
+          top: 50%;
+          margin-top: -7px; }
+        aside ul li:nth-child(2) p .oaspan1 {
+          left: 111px; }
+        aside ul li:nth-child(2) p .oaspan2 {
+          left: 221px; }
+        aside ul li:nth-child(2) p .jingdongtiyu {
+          color: #cccc33; }
+      aside ul li:nth-child(2) #banner {
+        width: 100%;
+        height: 438px;
+        position: relative; }
+        aside ul li:nth-child(2) #banner div {
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+          aside ul li:nth-child(2) #banner div img {
+            width: 740px;
+            height: 438px; }
+        aside ul li:nth-child(2) #banner div.ac {
+          opacity: 1; }
+        aside ul li:nth-child(2) #banner .ol {
+          position: absolute;
+          left: 50%;
+          bottom: 10%;
+          margin-left: -20px; }
+          aside ul li:nth-child(2) #banner .ol li {
+            text-align: center;
+            line-height: 20px;
+            float: left;
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+            color: #e3e3e3;
+            background-color: rgba(106, 106, 106, 0.5); }
+          aside ul li:nth-child(2) #banner .ol li.alio {
+            background-color: #cccc33; }
+      aside ul li:nth-child(2) .oDiv_one {
+        position: absolute;
+        width: 30px;
+        height: 60px;
+        line-height: 60px;
+        left: 0px;
+        top: 50%;
+        margin-top: -15px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer; }
+      aside ul li:nth-child(2) .oDiv_two {
+        position: absolute;
+        width: 30px;
+        height: 60px;
+        line-height: 60px;
+        right: 0px;
+        margin-top: -15px;
+        top: 50%;
+        font-size: 30px;
+        color: white;
+        cursor: pointer; }
+    aside ul li:nth-child(3) {
+      width: 240px;
+      height: 100%;
+      background-color: #f0f0f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      aside ul li:nth-child(3) .aside_aise {
+        width: 240px;
+        height: 200px;
+        background-color: white;
+        border-style: dotted;
+        border-color: #e1e1e8;
+        box-sizing: border-box; }
+      aside ul li:nth-child(3) .aside_aisetwo a img {
+        width: 240px;
+        height: 208px;
+        float: left; }
+
+.Running_shoes {
+  width: 100%;
+  height: 65px;
+  background-color: white; }
+  .Running_shoes .Running h3 {
+    background: url(images/33.jpg);
+    width: 1200px;
+    height: 65px;
+    color: black;
+    font-size: 26px;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 auto; }
+  .Running_shoes .Running .Running_shoes_shop {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: red; }
+    .Running_shoes .Running .Running_shoes_shop div {
+      width: 239px;
+      height: 235px;
+      background-color: #ffffff;
+      float: left;
+      border-top: 1px solid #f2f2f2;
+      border-left: 1px solid #f2f2f2;
+      text-align: center;
+      padding-top: 6px; }
+      .Running_shoes .Running .Running_shoes_shop div img {
+        width: 160px;
+        height: 160px; }
+      .Running_shoes .Running .Running_shoes_shop div .Running_op {
+        font-size: 12px;
+        height: 36px;
+        padding-left: 2px;
+        white-space: normal;
+        text-align: left;
+        color: #333;
+        text-overflow: ellipsis;
+        line-height: 1.5;
+        width: 214px;
+        overflow: hidden; }
+      .Running_shoes .Running .Running_shoes_shop div .Running_op2 {
+        width: 214px;
+        height: 18px;
+        line-height: 18px; }
+        .Running_shoes .Running .Running_shoes_shop div .Running_op2 .goodsPrice {
+          float: left;
+          color: red;
+          font-size: 22px; }
+        .Running_shoes .Running .Running_shoes_shop div .Running_op2 .goodsCount {
+          float: right; }
